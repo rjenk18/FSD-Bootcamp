@@ -21,15 +21,15 @@
 		<div id="container">
 			<main>
 				<h2>Enter your weight</h2>
-				<form>
+				<form name="frmCollectWeights" action="handler.html" onsubmit="return(validateForm());">
 					<div>
 						<label for="empName">Your Name</label>
-						<input id="empName" type="text" />
+						<input id="empName" type="text" /><span id="nameMessage"></span>
 					</div>
 
 					<div class="formSeparator">
 						<label for="empWeight">Your Weight Today</label>
-						<input id="empWeight" type="text" />
+						<input id="empWeight" type="text" /><span id="weightMessage"></span>
 					</div>
 					
 					<div>
@@ -57,5 +57,6 @@
 			<hr />
 			Copyright &copy; 2019. All rights reserved
 		</footer>
+		<script src="scripts/scripts.js"></script>
 	</body>
 </html>
